@@ -594,7 +594,7 @@ p, li { text-wrap: pretty; }
   /* Hero a todo el ancho, como en evernote.com: texto grande a la
      izquierda y composición a la derecha, con márgenes proporcionales */
   .hero {
-    padding: clamp(10px, 1.5vh, 32px) clamp(32px, 4.5vw, 110px) var(--section) clamp(40px, 8vw, 160px);
+    padding: clamp(32px, 5vh, 72px) clamp(32px, 4.5vw, 110px) var(--section) clamp(40px, 8vw, 160px);
     display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
     align-items: center; column-gap: clamp(32px, 4vw, 80px);
     min-height: calc(100svh - 80px);
@@ -609,6 +609,7 @@ p, li { text-wrap: pretty; }
   .hero__actions { justify-content: flex-start; }
   .hero__visual { margin: 0; padding: 0; }
   .stage { max-width: min(100%, calc((100svh - 230px) / .86)); margin-left: auto; margin-right: 0; }
+  .switch-row { margin-top: 0; }
 
   .day__nav { display: flex; }
   .moment {
