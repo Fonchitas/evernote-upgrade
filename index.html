@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Upgrade your Evernote</title>
+  <meta name="description" content="Design concept: what Evernote Free users gain by upgrading to Personal or Professional.">
+  <!-- Concepto para una prueba de diseño: fuera de los buscadores -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f8f6f2">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       SPRITE: formas de marca (como la galería de fondos de Evernote)
+       e iconos planos
+       ============================================================ -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="g-sun" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="100"><stop offset="0" stop-color="#f7dc5c"/><stop offset="1" stop-color="#f2a75a"/></linearGradient>
+      <linearGradient id="g-leaf" gradientUnits="userSpaceOnUse" x1="20" y1="0" x2="80" y2="100"><stop offset="0" stop-color="#b6e36a"/><stop offset="1" stop-color="#93b7ab"/></linearGradient>
+
+      <symbol id="b-asterisk" viewBox="0 0 100 100">
+        <rect x="38" y="0" width="24" height="100" rx="7"/>
+        <rect x="38" y="0" width="24" height="100" rx="7" transform="rotate(60 50 50)"/>
+        <rect x="38" y="0" width="24" height="100" rx="7" transform="rotate(120 50 50)"/>
+      </symbol>
+      <symbol id="b-scallop" viewBox="0 0 100 100"><circle cx="50" cy="50" r="36"/><circle cx="86.00" cy="50.00" r="13"/><circle cx="79.12" cy="71.16" r="13"/><circle cx="61.12" cy="84.24" r="13"/><circle cx="38.88" cy="84.24" r="13"/><circle cx="20.88" cy="71.16" r="13"/><circle cx="14.00" cy="50.00" r="13"/><circle cx="20.88" cy="28.84" r="13"/><circle cx="38.88" cy="15.76" r="13"/><circle cx="61.12" cy="15.76" r="13"/><circle cx="79.12" cy="28.84" r="13"/></symbol>
+      <symbol id="b-quatro" viewBox="0 0 100 100"><circle cx="26" cy="26" r="24"/><circle cx="74" cy="26" r="24"/><circle cx="26" cy="74" r="24"/><circle cx="74" cy="74" r="24"/></symbol>
+      <symbol id="b-quarter" viewBox="0 0 100 100"><path d="M0 100V0a100 100 0 0 1 100 100Z"/></symbol>
+      <symbol id="b-bowtie" viewBox="0 0 100 100"><path d="M10 2h80a6 6 0 0 1 5 9L72 50l23 39a6 6 0 0 1-5 9H10a6 6 0 0 1-5-9l23-39L5 11a6 6 0 0 1 5-9Z"/></symbol>
+      <symbol id="b-capsule" viewBox="0 0 100 100"><path d="M22 14h56c12 0 22 16 22 36s-10 36-22 36H22C10 86 0 70 0 50s10-36 22-36Z"/></symbol>
+      <symbol id="b-triangle" viewBox="0 0 100 100"><path d="M8 6h84a6 6 0 0 1 5 9L55 90a6 6 0 0 1-10 0L3 15a6 6 0 0 1 5-9Z"/></symbol>
+      <symbol id="b-half" viewBox="0 0 100 100"><path d="M0 100A100 100 0 0 1 100 0v100Z"/></symbol>
+      <symbol id="b-cloud" viewBox="0 0 100 100"><circle cx="30" cy="58" r="28"/><circle cx="60" cy="40" r="32"/><circle cx="78" cy="66" r="22"/><rect x="30" y="58" width="48" height="30"/></symbol>
+      <symbol id="b-moon" viewBox="0 0 100 100"><path d="M64 2A49 49 0 1 0 98 68 38 38 0 0 1 64 2Z"/></symbol>
+      <symbol id="b-sunburst" viewBox="0 0 100 100"><g fill="url(#g-sun)"><rect x="46.5" y="0.0" width="7" height="50.0" rx="1.5" transform="rotate(0.0 50 50)"/><rect x="46.5" y="8.0" width="7" height="42.0" rx="1.5" transform="rotate(20.0 50 50)"/><rect x="46.5" y="0.0" width="7" height="50.0" rx="1.5" transform="rotate(40.0 50 50)"/><rect x="46.5" y="8.0" width="7" height="42.0" rx="1.5" transform="rotate(60.0 50 50)"/><rect x="46.5" y="0.0" width="7" height="50.0" rx="1.5" transform="rotate(80.0 50 50)"/><rect x="46.5" y="8.0" width="7" height="42.0" rx="1.5" transform="rotate(100.0 50 50)"/><rect x="46.5" y="0.0" width="7" height="50.0" rx="1.5" transform="rotate(120.0 50 50)"/><rect x="46.5" y="8.0" width="7" height="42.0" rx="1.5" transform="rotate(140.0 50 50)"/><rect x="46.5" y="0.0" width="7" height="50.0" rx="1.5" transform="rotate(160.0 50 50)"/><rect x="46.5" y="8.0" width="7" height="42.0" rx="1.5" transform="rotate(180.0 50 50)"/><rect x="46.5" y="0.0" width="7" height="50.0" rx="1.5" transform="rotate(200.0 50 50)"/><rect x="46.5" y="8.0" width="7" height="42.0" rx="1.5" transform="rotate(220.0 50 50)"/><rect x="46.5" y="0.0" width="7" height="50.0" rx="1.5" transform="rotate(240.0 50 50)"/><rect x="46.5" y="8.0" width="7" height="42.0" rx="1.5" transform="rotate(260.0 50 50)"/><rect x="46.5" y="0.0" width="7" height="50.0" rx="1.5" transform="rotate(280.0 50 50)"/><rect x="46.5" y="8.0" width="7" height="42.0" rx="1.5" transform="rotate(300.0 50 50)"/><rect x="46.5" y="0.0" width="7" height="50.0" rx="1.5" transform="rotate(320.0 50 50)"/><rect x="46.5" y="8.0" width="7" height="42.0" rx="1.5" transform="rotate(340.0 50 50)"/></g></symbol>
+      <symbol id="b-heartleaf" viewBox="0 0 100 100"><path fill="url(#g-leaf)" d="M46 0c22 8 30 22 30 36 8-10 24-10 24 6 0 34-24 58-52 58C22 100 0 82 0 56 0 30 20 12 46 0Z"/></symbol>
+
+      <!-- Iconos planos -->
+      <symbol id="i-search" viewBox="0 0 32 32"><circle cx="14" cy="14" r="10"/><rect x="21" y="19.5" width="10" height="5" rx="2.5" transform="rotate(45 26 22)"/></symbol>
+      <symbol id="i-pdf" viewBox="0 0 32 32"><path d="M8 2h11l9 9v16a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3Z"/><path d="M19 2v6a3 3 0 0 0 3 3h6Z" fill="#fff" fill-opacity=".5"/><rect x="10" y="17" width="12" height="2.6" rx="1.3" fill="#fff"/><rect x="10" y="22" width="8" height="2.6" rx="1.3" fill="#fff"/></symbol>
+      <symbol id="i-check" viewBox="0 0 32 32"><circle cx="16" cy="16" r="15"/><path d="m10 16.5 4 4 8-9" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-upload" viewBox="0 0 32 32"><path d="M9 26a7 7 0 0 1-1-13.9A9 9 0 0 1 25.5 11 7.5 7.5 0 0 1 24 26Z"/><path d="M16 22v-9m-4 4 4-4 4 4" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-note" viewBox="0 0 32 32"><rect x="5" y="3" width="22" height="26" rx="4"/><rect x="10" y="10" width="12" height="2.6" rx="1.3" fill="#fff"/><rect x="10" y="15" width="12" height="2.6" rx="1.3" fill="#fff"/><rect x="10" y="20" width="8" height="2.6" rx="1.3" fill="#fff"/></symbol>
+      <symbol id="i-laptop" viewBox="0 0 32 32"><rect x="5" y="6" width="22" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M2 25h28" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 32 32"><rect x="9" y="3" width="14" height="26" rx="3" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M14 25h4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-tablet" viewBox="0 0 32 32"><rect x="6" y="3" width="20" height="26" rx="3" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M14 25h4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-wifi-off" viewBox="0 0 24 24"><path d="M2 8.5a15 15 0 0 1 20 0M5.5 12a10 10 0 0 1 13 0M9 15.5a5 5 0 0 1 6 0M12 19h.01M3 3l18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ============================================================
+       TOP BAR
+       ============================================================ -->
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Evernote, back to top">
+      <img src="assets/evernote-logo.svg" alt="Evernote" width="116" height="28">
+    </a>
+    <nav class="topbar__nav">
+      <a class="topbar__link" href="#plans">Compare plans</a>
+      <button class="btn btn--dark btn--small topbar__cta" type="button" data-checkout="personal">Upgrade</button>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ============================================================
+         HERO: texto + escena (panel girado, formas de marca, tarjetas)
+         ============================================================ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__copy">
+        <p class="hero__kicker reveal" style="--r:0">For people who’ve relied on Evernote for years</p>
+        <h1 id="hero-title" class="hero__title">
+          <span class="line"><span class="reveal" style="--r:1">Your day moves.</span></span>
+          <span class="line"><span class="reveal" style="--r:2">Your notes should too.</span></span>
+        </h1>
+        <p class="hero__lede reveal" style="--r:3">Evernote Free syncs 1 device. Personal syncs unlimited devices and works offline, plus AI-powered search, PDF annotation and full tasks &amp; reminders.</p>
+        <div class="hero__actions reveal" style="--r:4" id="hero-actions">
+          <button class="btn btn--dark" type="button" data-checkout="personal">
+            Upgrade to Personal <span class="btn__price">€7.99/mo</span>
+          </button>
+          <a class="textlink" href="#plans">Compare all plans</a>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="stage" id="stage" data-plan="free">
+          <div class="scene" id="devices">
+            <!-- Panel girado con formas de marca (en lugar de foto) -->
+            <div class="scene__panel">
+              <span class="bshape s-asterisk" style="--i:0"><svg><use href="#b-asterisk"/></svg></span>
+              <span class="bshape s-bowtie"   style="--i:1"><svg><use href="#b-bowtie"/></svg></span>
+              <span class="bshape s-quarter"  style="--i:2"><svg><use href="#b-quarter"/></svg></span>
+              <span class="bshape s-scallop"  style="--i:3"><svg><use href="#b-scallop"/></svg></span>
+              <span class="bshape s-capsule"  style="--i:4"><svg><use href="#b-capsule"/></svg></span>
+            </div>
+
+            <!-- Línea de sincronización entre tarjetas -->
+            <svg class="scene__sync" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M30 42C30 62 52 58 60 70" pathLength="100"/>
+            </svg>
+
+            <!-- Tarjeta: la nota -->
+            <div class="card card--note" aria-hidden="true">
+              <p class="card__crumb">Trips</p>
+              <p class="card__title">Weekend in Lisbon</p>
+              <ul class="card__tasks">
+                <li class="is-done">Book train tickets</li>
+                <li>Pastéis de Belém at 10:00</li>
+                <li>Pack phone charger</li>
+              </ul>
+            </div>
+
+            <!-- Etiquetas flotantes -->
+            <span class="pill pill--ai" aria-hidden="true"><svg><use href="#i-search"/></svg>AI-powered search</span>
+            <span class="pill pill--offline" aria-hidden="true"><svg><use href="#i-wifi-off"/></svg>Offline access</span>
+
+            <!-- Tarjeta: dispositivos -->
+            <div class="card card--devices">
+              <div class="card__head">
+                <svg class="counter__glyph" viewBox="0 0 220 120" aria-hidden="true">
+                  <path class="g-one" pathLength="1" d="M94 28 118 14V106"/>
+                  <path class="g-inf" pathLength="1" d="M110 60C132 26 186 26 186 60S132 94 110 60 34 26 34 60s54 34 76 0Z"/>
+                </svg>
+                <p class="card__label">Devices synced<span class="counter__note" aria-live="polite">1 device on Evernote Free</span></p>
+              </div>
+              <ul class="devlist" aria-hidden="true">
+                <li style="--i:0"><svg><use href="#i-laptop"/></svg>Laptop<span class="status is-on">Synced</span></li>
+                <li style="--i:1"><svg><use href="#i-phone"/></svg>Phone<span class="status"><span class="status__free">Not on Free</span><span class="status__paid">Synced</span></span></li>
+                <li style="--i:2"><svg><use href="#i-tablet"/></svg>Tablet<span class="status"><span class="status__free">Not on Free</span><span class="status__paid">Synced</span></span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="switch-row">
+            <span class="switch-row__label">Preview</span>
+            <div class="switch" role="group" aria-label="Preview your notes on each plan">
+              <span class="switch__thumb" aria-hidden="true"></span>
+              <button class="switch__opt" type="button" data-set="free" aria-pressed="true">Free</button>
+              <button class="switch__opt" type="button" data-set="personal" aria-pressed="false">Personal</button>
+            </div>
+          </div>
+          <p class="stage__hint">Tap the picture or swipe to compare</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         UN DÍA: la luz cambia de la mañana a la noche
+         ============================================================ -->
+    <section class="day" id="day" data-moment="0" aria-labelledby="day-title">
+      <div class="day__pin">
+        <header class="section-head wrap">
+          <h2 id="day-title" class="h2">One note, from morning to night</h2>
+          <p class="section-head__intro day__intro">You move between your desk, your phone and your tablet. With a paid plan, the same note goes with you.</p>
+        </header>
+
+        <div class="day__viewport" id="day-viewport">
+          <ol class="day__track" id="day-track">
+            <li class="moment" data-index="0">
+              <div class="moment__text">
+                <p class="moment__time">08:40</p>
+                <h3 class="moment__title">Start it at your desk</h3>
+                <p>Write the plan on your laptop before work starts.</p>
+                <p class="tag tag--free">Works on Free</p>
+              </div>
+              <div class="mscene">
+                <div class="mscene__panel mscene__panel--sun">
+                  <span class="mshape m-sunburst"><svg><use href="#b-sunburst"/></svg></span>
+                  <span class="mshape m-quarter"><svg><use href="#b-quarter"/></svg></span>
+                </div>
+                <div class="device device--laptop device--solo" aria-hidden="true">
+                  <div class="device__screen" data-screen="laptop"></div>
+                  <div class="device__base"></div>
+                </div>
+              </div>
+            </li>
+            <li class="moment" data-index="1">
+              <div class="moment__text">
+                <p class="moment__time">13:15</p>
+                <h3 class="moment__title">Check it with no signal</h3>
+                <p>On the metro or on a plane, offline access keeps your notes open on your phone.</p>
+                <p class="tag tag--paid">With a paid plan: offline access</p>
+              </div>
+              <div class="mscene">
+                <div class="mscene__panel mscene__panel--leaf">
+                  <span class="mshape m-leaf"><svg><use href="#b-heartleaf"/></svg></span>
+                  <span class="mshape m-quatro"><svg><use href="#b-quatro"/></svg></span>
+                </div>
+                <div class="device device--phone device--solo" aria-hidden="true">
+                  <div class="device__screen" data-screen="phone"></div>
+                  <span class="offline-badge"><svg width="14" height="14"><use href="#i-wifi-off"/></svg>Offline</span>
+                </div>
+              </div>
+            </li>
+            <li class="moment" data-index="2">
+              <div class="moment__text">
+                <p class="moment__time">21:30</p>
+                <h3 class="moment__title">Finish it on the sofa</h3>
+                <p>Open the same note on your tablet and pick up where you left off.</p>
+                <p class="tag tag--paid">With a paid plan: unlimited devices</p>
+              </div>
+              <div class="mscene">
+                <div class="mscene__panel mscene__panel--night">
+                  <span class="mshape m-moon"><svg><use href="#b-moon"/></svg></span>
+                  <span class="mshape m-triangle"><svg><use href="#b-triangle"/></svg></span>
+                </div>
+                <div class="device device--tablet device--solo" aria-hidden="true">
+                  <div class="device__screen" data-screen="tablet"></div>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="day__nav wrap">
+          <div class="day__dots" role="tablist" aria-label="Moments of the day">
+            <button class="day__dot" type="button" role="tab" aria-selected="true" data-go="0">08:40</button>
+            <button class="day__dot" type="button" role="tab" aria-selected="false" data-go="1">13:15</button>
+            <button class="day__dot" type="button" role="tab" aria-selected="false" data-go="2">21:30</button>
+          </div>
+          <div class="day__progress" aria-hidden="true"><span class="day__bar" id="day-bar"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EL RESTO DE LO QUE GANAS (índice con iconos planos de color)
+         ============================================================ -->
+    <section class="gains wrap" aria-labelledby="gains-title">
+      <header class="section-head">
+        <h2 id="gains-title" class="h2">Also yours with Personal</h2>
+      </header>
+      <div class="index" id="index" role="table" aria-label="What changes from Free to Personal">
+        <div class="index__head" role="row">
+          <span role="columnheader"><span class="sr-only">Feature</span></span>
+          <span role="columnheader">Free</span>
+          <span role="columnheader">Personal</span>
+        </div>
+        <div class="index__row" role="row" style="--c: var(--blue)">
+          <span class="index__name" role="rowheader"><svg class="index__icon" aria-hidden="true"><use href="#i-search"/></svg>AI-powered search</span>
+          <span class="index__free" role="cell">Not included</span>
+          <span class="index__paid" role="cell">Included</span>
+        </div>
+        <div class="index__row" role="row" style="--c: var(--lime)">
+          <span class="index__name" role="rowheader"><svg class="index__icon" aria-hidden="true"><use href="#i-pdf"/></svg>PDF annotation</span>
+          <span class="index__free" role="cell">Not included</span>
+          <span class="index__paid" role="cell">Included</span>
+        </div>
+        <div class="index__row" role="row" style="--c: var(--pink)">
+          <span class="index__name" role="rowheader"><svg class="index__icon" aria-hidden="true"><use href="#i-check"/></svg>Tasks &amp; reminders</span>
+          <span class="index__free" role="cell">Limited</span>
+          <span class="index__paid" role="cell">Full</span>
+        </div>
+        <div class="index__row" role="row" style="--c: var(--orange)">
+          <span class="index__name" role="rowheader"><svg class="index__icon" aria-hidden="true"><use href="#i-upload"/></svg>Monthly upload limit</span>
+          <span class="index__free" role="cell">1 GB</span>
+          <span class="index__paid" role="cell">100 GB</span>
+        </div>
+        <div class="index__row" role="row" style="--c: var(--yellow)">
+          <span class="index__name" role="rowheader"><svg class="index__icon" aria-hidden="true"><use href="#i-note"/></svg>Note size limit</span>
+          <span class="index__free" role="cell">25 MB</span>
+          <span class="index__paid" role="cell">200 MB</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PLANES
+         ============================================================ -->
+    <section class="plans wrap" id="plans" aria-labelledby="plans-title">
+      <header class="section-head">
+        <h2 id="plans-title" class="h2">Which plan is right for you?</h2>
+        <p class="section-head__intro">Personal is built for you on your own. Professional adds tools for teams and is priced per seat, for each person who uses it.</p>
+      </header>
+
+      <div class="plans__grid">
+        <article class="plan plan--personal" aria-labelledby="p-personal">
+          <p class="plan__badge">Best for you</p>
+          <h3 id="p-personal" class="plan__tag plan__tag--lime">Personal</h3>
+          <p class="plan__price"><span class="plan__amount">€7.99</span><span class="plan__per">/ month</span></p>
+          <p class="plan__desc">Everything Free is missing, on every device you use.</p>
+          <button class="btn btn--dark btn--block" type="button" data-checkout="personal">Upgrade to Personal</button>
+          <p class="plan__label">Key features:</p>
+          <ul class="plan__list">
+            <li><strong>Unlimited devices synced</strong></li>
+            <li><strong>Offline access</strong></li>
+            <li>AI-powered search</li>
+            <li>PDF annotation</li>
+            <li>Full tasks &amp; reminders</li>
+            <li>100 GB monthly uploads</li>
+            <li>200 MB per note</li>
+          </ul>
+          <p class="plan__not">Not included: team collaboration, admin &amp; user management.</p>
+        </article>
+
+        <article class="plan plan--pro" aria-labelledby="p-pro">
+          <h3 id="p-pro" class="plan__tag plan__tag--lilac">Professional</h3>
+          <p class="plan__price"><span class="plan__amount">€14.99</span><span class="plan__per">/ month / seat</span></p>
+          <p class="plan__desc">Everything in Personal, plus tools for working as a team.</p>
+          <button class="btn btn--outline btn--block" type="button" data-checkout="professional">Upgrade to Professional</button>
+          <p class="plan__label">Everything in Personal, plus:</p>
+          <ul class="plan__list">
+            <li><strong>Team collaboration</strong></li>
+            <li><strong>Admin &amp; user management</strong></li>
+            <li>2 TB monthly uploads</li>
+            <li>500 MB per note</li>
+          </ul>
+        </article>
+
+        <article class="plan plan--free" aria-labelledby="p-free">
+          <h3 id="p-free" class="plan__tag plan__tag--grey">Free</h3>
+          <p class="plan__price"><span class="plan__amount">€0</span><span class="plan__per">/ month</span></p>
+          <p class="plan__desc">Your current plan.</p>
+          <p class="plan__current">You’re on this plan</p>
+          <p class="plan__label">Includes:</p>
+          <ul class="plan__list">
+            <li>1 device synced</li>
+            <li>1 GB monthly uploads</li>
+            <li>25 MB per note</li>
+            <li>Limited tasks &amp; reminders</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         COMPARATIVA COMPLETA (las 10 filas del brief)
+         ============================================================ -->
+    <section class="compare wrap" aria-labelledby="compare-title">
+      <header class="section-head">
+        <h2 id="compare-title" class="h2 h2--small">Full comparison</h2>
+      </header>
+      <div class="compare__card" tabindex="0" role="region" aria-label="Full plan comparison">
+        <table class="compare__table">
+          <thead>
+            <tr>
+              <th scope="col">Feature</th>
+              <th scope="col">Free</th>
+              <th scope="col" class="is-personal">Personal</th>
+              <th scope="col">Professional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Devices synced</th><td>1</td><td class="is-personal">Unlimited</td><td>Unlimited</td></tr>
+            <tr><th scope="row">Monthly upload limit</th><td>1 GB</td><td class="is-personal">100 GB</td><td>2 TB</td></tr>
+            <tr><th scope="row">Note size limit</th><td>25 MB</td><td class="is-personal">200 MB</td><td>500 MB</td></tr>
+            <tr><th scope="row">Offline access</th><td><span class="no" aria-label="Not included"></span></td><td class="is-personal"><span class="yes" aria-label="Included"></span></td><td><span class="yes" aria-label="Included"></span></td></tr>
+            <tr><th scope="row">AI-powered search</th><td><span class="no" aria-label="Not included"></span></td><td class="is-personal"><span class="yes" aria-label="Included"></span></td><td><span class="yes" aria-label="Included"></span></td></tr>
+            <tr><th scope="row">PDF annotation</th><td><span class="no" aria-label="Not included"></span></td><td class="is-personal"><span class="yes" aria-label="Included"></span></td><td><span class="yes" aria-label="Included"></span></td></tr>
+            <tr><th scope="row">Tasks &amp; reminders</th><td>Limited</td><td class="is-personal">Full</td><td>Full</td></tr>
+            <tr><th scope="row">Team collaboration</th><td><span class="no" aria-label="Not included"></span></td><td class="is-personal"><span class="no" aria-label="Not included"></span></td><td><span class="yes" aria-label="Included"></span></td></tr>
+            <tr><th scope="row">Admin &amp; user management</th><td><span class="no" aria-label="Not included"></span></td><td class="is-personal"><span class="no" aria-label="Not included"></span></td><td><span class="yes" aria-label="Included"></span></td></tr>
+            <tr class="compare__price"><th scope="row">Price</th><td>Free</td><td class="is-personal">€7.99/mo</td><td>€14.99/mo per seat</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PREGUNTAS
+         ============================================================ -->
+    <section class="faq wrap" aria-labelledby="faq-title">
+      <header class="section-head">
+        <h2 id="faq-title" class="h2 h2--small">Two quick answers</h2>
+      </header>
+      <div class="faq__list">
+        <details class="faq__item">
+          <summary>Which plan is right for me?</summary>
+          <p>If you use Evernote on your own, Personal gives you everything Free is missing: unlimited devices, offline access, AI-powered search, PDF annotation and full tasks &amp; reminders. If you work with a team and need team collaboration and admin &amp; user management, choose Professional.</p>
+        </details>
+        <details class="faq__item">
+          <summary>How is Professional priced?</summary>
+          <p>€14.99 per month for each seat, meaning each person on your team who uses it.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CIERRE: franja crema con sol de rayos y hoja (giran con el scroll)
+         ============================================================ -->
+    <section class="close" id="close" aria-labelledby="close-title" data-progress>
+      <span class="close__sun" aria-hidden="true"><svg><use href="#b-sunburst"/></svg></span>
+      <span class="close__leaf" aria-hidden="true"><svg><use href="#b-heartleaf"/></svg></span>
+      <div class="close__inner">
+        <h2 id="close-title" class="close__title">Remember everything. Everywhere you go.</h2>
+        <p class="close__lede">Unlimited devices, offline access and the rest of Personal for €7.99 a month.</p>
+        <div class="close__actions">
+          <button class="btn btn--dark" type="button" data-checkout="personal">Upgrade to Personal</button>
+          <button class="textlink textlink--button" type="button" data-checkout="professional">Or choose Professional for your team</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <p>Design concept for a Bending Spoons design task. Not an official Evernote page. Plans and prices as given in the task brief.</p>
+  </footer>
+
+  <!-- Barra flotante -->
+  <div class="dock" id="dock">
+    <p class="dock__text"><strong>Personal</strong> <span>€7.99/mo, unlimited devices</span></p>
+    <button class="btn btn--dark btn--small" type="button" data-checkout="personal" tabindex="-1">Upgrade</button>
+  </div>
+
+  <!-- Paso de confirmación (maqueta, sin pago) -->
+  <dialog class="sheet" id="sheet" aria-labelledby="sheet-title">
+    <form method="dialog" class="sheet__inner">
+      <span class="sheet__grab" aria-hidden="true"></span>
+      <p class="sheet__eyebrow">You picked</p>
+      <h2 id="sheet-title" class="sheet__title">Personal</h2>
+      <p class="sheet__price" id="sheet-price">€7.99/month</p>
+      <ul class="sheet__list" id="sheet-list"></ul>
+      <p class="sheet__note">This is a design prototype, so the payment step isn’t part of it.</p>
+      <div class="sheet__actions">
+        <button class="btn btn--dark" value="ok">Got it</button>
+        <button class="textlink textlink--button" value="back">Back to plans</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- La nota que aparece en los dispositivos del día (la clona main.js) -->
+  <template id="note-tpl">
+    <div class="note">
+      <aside class="note__side">
+        <p class="note__nb">Trips</p>
+        <p class="note__item is-active">Weekend in Lisbon</p>
+        <p class="note__item">Packing list</p>
+        <p class="note__item">Restaurant ideas</p>
+      </aside>
+      <div class="note__body">
+        <p class="note__title">Weekend in Lisbon</p>
+        <p class="note__meta">Edited just now</p>
+        <ul class="note__tasks">
+          <li class="is-done">Book train tickets</li>
+          <li>Pastéis de Belém at 10:00</li>
+          <li>Pack phone charger</li>
+        </ul>
+        <p class="note__file"><span>PDF</span>itinerary.pdf</p>
+      </div>
+    </div>
+  </template>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
